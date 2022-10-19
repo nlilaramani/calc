@@ -36,7 +36,10 @@ pipeline {
         }
         stage('Push Docker image'){
             steps {
-                bat "docker push nlpappu/repo:calc" 
+                bat """
+                docker login -u nlpappu -p nv981222
+                docker push nlpappu/repo:calc" 
+                """
             }
         }
     }

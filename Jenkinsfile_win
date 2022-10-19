@@ -27,6 +27,17 @@ pipeline {
                     archiveArtifacts 'target/*.jar'
                 }
             }
+            
+        }
+        stage('Docker image'){
+            steps {
+                bat "docker build -t nlpappu/repo:calc .
+            }
+        }
+        stage('Push Docker image'){
+            steps {
+                bat "docker push nlpappu/repo:calc" 
+            }
         }
     }
 }

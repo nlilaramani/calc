@@ -1,7 +1,7 @@
 kind: "DeploymentConfig"
 apiVersion: "v1"
 metadata:
-  name: "Calculator"
+  name: "Calculator1"
 spec:
   template: 
     metadata:

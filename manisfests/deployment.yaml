@@ -1,1 +1,22 @@
-aaa
+kind: "DeploymentConfig"
+apiVersion: "v1"
+metadata:
+  name: "Calculator"
+spec:
+  template: 
+    metadata:
+      labels:
+        name: "calc"
+    spec:
+      containers:
+        - name: "calculator"
+          image: "image-registry.openshift-image-registry.svc:5000/nlilaramani-dev/calc"
+          ports:
+            - containerPort: 8080
+              protocol: "TCP"
+  replicas: 2 
+  strategy: 
+    type: "Rolling"
+  paused: false 
+  revisionHistoryLimit: 2 
+  minReadySeconds: 0 

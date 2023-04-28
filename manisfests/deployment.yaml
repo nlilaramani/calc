@@ -1,17 +1,22 @@
 kind: "Deployment"
 apiVersion: "apps/v1"
 metadata:
-  name: "Calculator"
+  name: calculator
   namespace: nlilaramani-dev
+  labels:
+    app: calc
 spec:
+  selector:
+    matchLabels:
+      app: calc
   template: 
     metadata:
       labels:
-        name: "calc"
+        app: calc
     spec:
       containers:
-        - name: "calculator"
-          image: "image-registry.openshift-image-registry.svc:5000/nlilaramani-dev/calc"
+        - name: calculator
+          image: image-registry.openshift-image-registry.svc:5000/nlilaramani-dev/calc
           ports:
             - containerPort: 8080
               protocol: "TCP"

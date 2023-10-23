@@ -29,18 +29,18 @@ pipeline {
             }
             
         }
-        stage('Docker image'){
+        /*stage('Docker image'){
             steps {
                 bat "docker build -t nlpappu/repo:calc ."
             }
-        }
-        stage('Push Docker image'){
+        }*/
+        /*stage('Push Docker image'){
             steps {
                 bat """
                 docker login -u nlpappu -p nv981222
                 docker push nlpappu/repo:calc
                 """
             }
-        }
+        }*/
     }
 }

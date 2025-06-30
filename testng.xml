@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MyParameterSuite">
+    <test name="CalcTest">
+        <parameter name="num1" value="100"/>
+        <parameter name="num2" value="100"/>
+        <parameter name="password" value="testPass"/>
+        <classes>
+            <class name="com.banking.calc.CalcNGTest"/>
+        </classes>
+    </test>
+</suite>

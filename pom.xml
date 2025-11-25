@@ -65,11 +65,11 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.5.3</version>  <!-- Use the appropriate version -->
-                        <configuration>
+                        <!--<configuration>
                             <suiteXmlFiles>
                                 <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Or the correct path to your file -->
                             </suiteXmlFiles>
-                        </configuration>
+                        </configuration>-->
                     </plugin>
 		</plugins>
 	</build>

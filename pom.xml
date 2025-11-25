@@ -67,7 +67,7 @@
                         <version>3.5.3</version>  <!-- Use the appropriate version -->
                         <!--<configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Or the correct path to your file -->
+                                <suiteXmlFile>testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>-->
                     </plugin>

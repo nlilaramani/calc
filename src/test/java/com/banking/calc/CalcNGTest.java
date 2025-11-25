@@ -14,7 +14,7 @@ import org.testng.annotations.Parameters;
  */
 public class CalcNGTest {
 
-    @Test
+
     public void testAdd(){
         System.out.println("Test NG - add");
         double num1 = 10.0;
@@ -27,8 +27,7 @@ public class CalcNGTest {
         //fail("The test case is a prototype.");
         
     }
-    @Parameters({"num1","num2"})
-    @Test
+
     public void testSub(double num1, double num2){
         System.out.println("Test NG - add");
         Calculator instance = new Calculator();

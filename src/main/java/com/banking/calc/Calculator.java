@@ -14,7 +14,7 @@ public class Calculator {
     public  double add(double num1, double num2){
         int num=1;
         int someint=0;
-        return num1+num2;
+        return num1+num2+1;
     }
     
     public double subtract(double num1,double num2){
